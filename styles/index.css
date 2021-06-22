@@ -1,1 +1,45 @@
-@import '_base.css';
+@import "_base.css";
+
+body {
+  background-color: blanchedalmond;
+}
+
+.top {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quiz-body {
+  display: grid;
+  grid-template-rows: 5em auto 5em;
+}
+.content {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 18em;
+  border: 0.1em solid black;
+  border-radius: 5%;
+  padding: 0.8em;
+}
+
+.quiz-footer {
+  background-color: cornflowerblue;
+  display: grid;
+  grid-template-rows: repeat(1fr);
+}
+
+.fcontainer {
+  border: 0.1em solid black;
+}
+
+.quiz-footer li img {
+  height: 2em;
+}
