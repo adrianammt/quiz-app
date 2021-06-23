@@ -1,1 +1,57 @@
-@import '_base.css';
+@import "_base.css";
+
+body {
+  background-color: #b4cbe7;
+}
+
+.top {
+  background-color: #2d4779;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quiz-body {
+  display: grid;
+  grid-template-rows: 5em auto 5em;
+  height: 100vh;
+}
+.content {
+  display: grid;
+  gap: 1em;
+  padding: 1em;
+  overflow: scroll;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 18em;
+  border: 0.1em solid black;
+  border-radius: 2em;
+  padding: 0.8em;
+}
+
+.bottom {
+  background-color: #2d4779;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bmenu {
+  display: grid;
+  grid-template-columns: 6em 6em 6em 6em;
+  height: 4em;
+  gap: 0.5em;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item img {
+  height: 4em;
+}
