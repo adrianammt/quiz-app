@@ -1,0 +1,22 @@
+{
+  "name": "quiz-app-exercise",
+  "version": "1.0.0",
+  "description": "My quiz app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianammt/quiz-app-exercise.git"
+  },
+  "author": "amorat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianammt/quiz-app-exercise/issues"
+  },
+  "homepage": "https://github.com/adrianammt/quiz-app-exercise#readme",
+  "devDependencies": {
+    "htmlhint": "^0.15.1"
+  }
+}
