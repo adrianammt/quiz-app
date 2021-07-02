@@ -1,0 +1,37 @@
+body {
+  background-color: var(--body-color);
+}
+
+.quiz-body {
+  display: grid;
+  grid-template-rows: 5em auto 5em;
+  height: 100vh;
+}
+
+.header {
+  background-color: var(--header-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  overflow-y: scroll;
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+/*For Home and Bookmark*/
+
+.quiz-card_elements {
+  padding: 0.8rem;
+}
+.question-title {
+  text-transform: uppercase;
+}

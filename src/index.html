@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
+
   <body class="quiz-body">
-    <header class="quiz-body_top">
+    <header class="header">
       <h1 id="home">Quiz App</h1>
     </header>
-    <main class="quiz-body_content">
+    <main class="content">
       <section class="quiz-card">
-        <img class="quiz-card_bookmark-empty" src="images/bookmark-empty.png" />
+        <img
+          class="quiz-card_bookmark-empty"
+          src="/images/bookmark-empty.png"
+        />
         <div class="quiz-card_elements">
-          <h2 class="question">Question 1:</h2>
+          <h2 class="question-title">Question 1:</h2>
         </div>
         <div class="quiz-card_elements">
-          <p>
+          <p class="quiz-card--question">
             What's the name of Hagrid's 3-headed dog that protects the
             Philosopher's Stone?
           </p>
@@ -26,13 +30,21 @@
           <button class="show-hide-answer">Show answer</button>
         </div>
         <div class="quiz-card_elements">
-          <button class="card_part-tag">#Harry Potter</button>
-          <button class="card_part-tag">#Books</button>
-          <button class="card_part-tag">#Guardian dog</button>
+          <p class="hide-text answer-text">
+            Fluffy is the name of the giant three-headed dog.The only known way
+            to get past Fluffy is to lull him to sleep by playing music.
+          </p>
+          <p class="card_part-tag">#Harry Potter</p>
+          <p class="card_part-tag">#Books</p>
+          <p class="card_part-tag">#Guardian dog</p>
         </div>
       </section>
-      <section class="quiz-card">
-        <img class="quiz-card_bookmark-empty" src="images/bookmark-empty.png" />
+
+      <!--<section class="quiz-card">
+        <img
+          class="quiz-card_bookmark-empty"
+          src="/images/bookmark-empty.png"
+        />
         <div class="quiz-card_elements">
           <h2 class="question">Question 1:</h2>
         </div>
@@ -51,63 +63,69 @@
             to get past Fluffy is to lull him to sleep by playing music.
           </p>
         </div>
-      </section>
+      </section>-->
       <section class="quiz-card">
         <img
           class="quiz-card_bookmark-empty"
-          src="images/bookmark-filled.png"
+          src="/images/bookmark-filled.png"
         />
         <div class="quiz-card_elements">
-          <h2 class="question">Question 2:</h2>
+          <h2 class="question-title">Question 2:</h2>
         </div>
         <div class="quiz-card_elements">
           <p>How many muscles are required to smile?</p>
         </div>
         <div class="quiz-card_elements">
-          <button class="showanswer">Show answer</button>
+          <button class="show-hide-answer">Show answer</button>
         </div>
         <div class="quiz-card_elements">
-          <button class="card_part-tag">#Anathomy</button>
-          <button class="card_part-tag">#Facial muscles</button>
+          <p class="hide-text answer-text">
+            Fluffy is the name of the giant three-headed dog.The only known way
+            to get past Fluffy is to lull him to sleep by playing music.
+          </p>
+          <p class="card_part-tag">#Anathomy</p>
+          <p class="card_part-tag">#Facial muscles</p>
         </div>
       </section>
       <section class="quiz-card">
         <img
           class="quiz-card_bookmark-empty"
-          src="images/bookmark-filled.png"
+          src="/images/bookmark-filled.png"
         />
         <div class="quiz-card_elements">
-          <h2 class="question">Question 3:</h2>
+          <h2 class="question-title">Question 3:</h2>
         </div>
         <div class="quiz-card_elements">
           <p>When did the website Facebook launch?</p>
         </div>
         <div class="quiz-card_elements">
-          <button class="showanswer">Show answer</button>
+          <button class="show-hide-answer">Show answer</button>
         </div>
         <div class="quiz-card_elements">
-          <button class="card_part-tag">#Social Media</button>
-          <button class="card_part-tag">#Internet</button>
+          <p class="card_part-tag">#Social Media</p>
+          <p class="card_part-tag">#Internet</p>
         </div>
       </section>
     </main>
-    <footer class="bottom">
+    <footer class="footer">
       <nav class="navmenu">
         <button class="navmenu_item">
-          <a href="index.html"><img src="images/home.png" /></a>Home
+          <a href=""><img src="/images/home.png" /></a>Home
         </button>
         <button class="navmenu_item">
-          <a href="bookmark.html"><img src="images/bookmark-filled.png" /></a
+          <a href="/src/bookmark.html"
+            ><img src="/images/bookmark-filled.png" /></a
           >Bookmark
         </button>
         <button class="navmenu_item">
-          <a href="create.html"><img src="images/create.png" /></a>Create
+          <a href="/src/create.html"><img src="/images/create.png" /></a>Create
         </button>
         <button class="navmenu_item">
-          <a href="profile.html"><img src="images/profile.png" /></a>Profile
+          <a href="/src/profile.html"><img src="/images/profile.png" /></a
+          >Profile
         </button>
       </nav>
     </footer>
-    <script src="index.js"></script>
+    <script src="/src/index.js"></script>
   </body>
 </html>
