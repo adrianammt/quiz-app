@@ -1,3 +1,13 @@
+body {
+  background-color: var(--body-color);
+}
+
+.quiz-body {
+  display: grid;
+  grid-template-rows: 5em auto 5em;
+  height: 100vh;
+}
+
 .header {
   background-color: var(--header-color);
   display: flex;
@@ -11,4 +21,8 @@
   gap: 1em;
   padding: 1em;
   overflow-y: scroll;
+}
+
+.footer {
+  background-color: var(--footer-color);
 }
