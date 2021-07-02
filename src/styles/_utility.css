@@ -26,3 +26,12 @@ body {
 .footer {
   background-color: var(--footer-color);
 }
+
+/*For Home and Bookmark*/
+
+.quiz-card_elements {
+  padding: 0.8rem;
+}
+.question-title {
+  text-transform: uppercase;
+}

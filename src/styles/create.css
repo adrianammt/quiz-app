@@ -44,3 +44,18 @@ body {
 .navmenu_item:nth-of-type(3) {
   -webkit-filter: grayscale(1) invert(1);
 }
+
+.create-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.submit-question {
+  text-transform: uppercase;
+}
+
+.create-card__input {
+  display: flex;
+  justify-content: center;
+}
