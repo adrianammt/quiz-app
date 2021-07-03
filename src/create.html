@@ -11,25 +11,25 @@
       <h1 id="home">Create</h1>
     </header>
     <main class="content">
-      <form class="create-card">
-        <label for="add-question">Question</label>
+      <form class="create-card" autocomplete="off">
+        <label for="add-question">New Question</label>
         <textarea
           class="create-card__input"
-          name="add-question"
-          id="add-question"
+          name="addQuestion"
+          id="addQuestion"
           stype="text"
           maxlength="140"
         ></textarea>
         <label for="add-answer">Answer</label>
         <textarea
           class="create-card__input"
-          name="add-answer"
-          id="add-answer"
+          name="addAnswer"
+          id="addAnswer"
           stype="text"
           maxlength="140"
         ></textarea>
         <label for="add-tags">Tags</label>
-        <input type="text" id="add-tags" />
+        <input type="text" name="addTags" id="addTags" />
         <div class="create-card__input">
           <button type="submit" class="submit-button">Submit</button>
         </div>
