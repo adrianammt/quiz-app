@@ -11,6 +11,11 @@ html {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 :root {
   --header-color: #418b88;
   --footer-color: #418b88;

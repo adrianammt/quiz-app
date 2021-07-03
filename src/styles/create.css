@@ -48,11 +48,14 @@ body {
 .create-card {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.6em;
 }
 
-.submit-question {
+.submit-button {
   text-transform: uppercase;
+  height: 3rem;
+  width: 10rem;
+  justify-self: center;
 }
 
 .create-card__input {
