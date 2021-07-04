@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
 
@@ -37,30 +41,6 @@
         </div>
       </section>
 
-      <!--<section class="quiz-card">
-        <img
-          class="quiz-card_bookmark-empty"
-          src="/images/bookmark-empty.png"
-        />
-        <div class="quiz-card_elements">
-          <h2 class="question">Question 1:</h2>
-        </div>
-        <div class="quiz-card_elements">
-          <p>
-            What's the name of Hagrid's 3-headed dog that protects the
-            Philosopher's Stone?
-          </p>
-        </div>
-        <div class="quiz-card_elements">
-          <button class="hideanswer">Hide answer</button>
-        </div>
-        <div class="quiz-card_elements">
-          <p>
-            Fluffy is the name of the giant three-headed dog.The only known way
-            to get past Fluffy is to lull him to sleep by playing music.
-          </p>
-        </div>
-      </section>-->
       <section class="quiz-card">
         <img class="quiz-card__bookmark" src="/images/bookmark-filled.png" />
         <div class="quiz-card_elements">
@@ -74,8 +54,7 @@
         </div>
         <div class="quiz-card_elements">
           <p class="hide-text answer-text">
-            Fluffy is the name of the giant three-headed dog.The only known way
-            to get past Fluffy is to lull him to sleep by playing music.
+            About 43 muscles in a face are working to create a smile.
           </p>
           <p class="card_part-tag">#Anathomy</p>
           <p class="card_part-tag">#Facial muscles</p>
@@ -93,6 +72,7 @@
           <button class="show-hide-answer">Show answer</button>
         </div>
         <div class="quiz-card_elements">
+          <p class="hide-text answer-text">It launched on February 2004.</p>
           <p class="card_part-tag">#Social Media</p>
           <p class="card_part-tag">#Internet</p>
         </div>
@@ -100,21 +80,21 @@
     </main>
     <footer class="footer">
       <nav class="navmenu">
-        <button class="navmenu_item">
-          <a href=""><img src="/images/home.png" /></a>Home
-        </button>
-        <button class="navmenu_item">
-          <a href="/src/bookmark.html"
-            ><img src="/images/bookmark-filled.png" /></a
-          >Bookmark
-        </button>
-        <button class="navmenu_item">
-          <a href="/src/create.html"><img src="/images/create.png" /></a>Create
-        </button>
-        <button class="navmenu_item">
-          <a href="/src/profile.html"><img src="/images/profile.png" /></a
-          >Profile
-        </button>
+        <a href="" class="navmenu_item active"
+          ><img src="/images/home.png" />Home</a
+        >
+
+        <a href="/src/bookmark.html" class="navmenu_item"
+          ><img src="/images/bookmark-filled.png" />Bookmark</a
+        >
+
+        <a href="/src/create.html" class="navmenu_item"
+          ><img src="/images/create.png" />Create</a
+        >
+
+        <a href="/src/profile.html" class="navmenu_item"
+          ><img src="/images/profile.png" />Profile</a
+        >
       </nav>
     </footer>
     <script src="/src/script.js"></script>

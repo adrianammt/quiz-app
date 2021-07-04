@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/profile.css" />
   </head>
   <body class="quiz-body">
@@ -11,7 +15,7 @@
       <h1 id="profile">Profile</h1>
     </header>
 
-    <main class="profile-content">
+    <main class="content">
       <div class="pic-card">
         <img class="profile-pic" src="/images/se7entyn9ne34.jpeg" />
 
@@ -25,32 +29,35 @@
       </p>
 
       <h2>Skills</h2>
-      <div>
-        <button>ABC</button>
-        <button>CDE</button>
-        <button>EFGH</button>
-        <button>IJKLMN</button>
-        <button>OPQRS</button>
+      <div class="skills-list">
+        <p class="skills">ABC</p>
+        <p class="skills">CDE</p>
+        <p class="skills">EFGH</p>
+        <p class="skills">IJKLMN</p>
+        <p class="skills">OPQRS</p>
       </div>
 
-      <button>LOGOUT</button>
+      <button class="submit-button">LOGOUT</button>
     </main>
     <footer class="footer">
       <nav class="navmenu">
-        <button class="navmenu_item">
-          <a href="index.html"><img src="/images/home.png" /></a>
-        </button>
-        <button class="navmenu_item">
-          <a href="bookmark.html"><img src="/images/bookmark-filled.png" /></a>
-        </button>
-        <button class="navmenu_item">
-          <a href="create.html"><img src="/images/create.png" /></a>
-        </button>
-        <button class="navmenu_item">
-          <a href="profile.html"><img src="/images/profile.png" /></a>
-        </button>
+        <a href="/src/index.html" class="navmenu_item active"
+          ><img src="/images/home.png" />Home</a
+        >
+
+        <a href="/src/bookmark.html" class="navmenu_item"
+          ><img src="/images/bookmark-filled.png" />Bookmark</a
+        >
+
+        <a href="/src/create.html" class="navmenu_item"
+          ><img src="/images/create.png" />Create</a
+        >
+
+        <a href="" class="navmenu_item"
+          ><img src="/images/profile.png" />Profile</a
+        >
       </nav>
     </footer>
-    <script src="/src/index.js"></script>
+    <script src="/src/script.js"></script>
   </body>
 </html>

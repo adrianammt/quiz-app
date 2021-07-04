@@ -28,6 +28,9 @@ body {
 
 .footer {
   background-color: var(--footer-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navmenu {
@@ -36,9 +39,10 @@ body {
   gap: 0.5em;
   justify-content: space-evenly;
   align-content: center;
+  width: 100%;
 }
 .navmenu img {
-  height: 3em;
+  height: 4em;
 }
 
 .navmenu_item {
