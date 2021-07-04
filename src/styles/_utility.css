@@ -53,6 +53,14 @@ body {
   background-color: transparent;
 }
 
+.navmenu a {
+  opacity: 0.5;
+}
+
+.navmenu a.active {
+  opacity: 1;
+}
+
 /* --For Home and Bookmark-- */
 
 .quiz-card_elements {

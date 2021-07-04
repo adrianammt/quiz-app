@@ -27,8 +27,3 @@
   align-self: center;
   margin-top: 1.5em;
 }
-
-/*To show what page is active*/
-.navmenu_item:nth-of-type(4) {
-  -webkit-filter: grayscale(1) invert(1);
-}

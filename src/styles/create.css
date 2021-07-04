@@ -11,17 +11,18 @@
   display: flex;
   justify-content: center;
   height: 110px;
+  padding: 0.5rem;
 }
 
 .input {
-  border-radius: 4px;
-  border: 2px solid #808080c9;
+  border-radius: 5px;
+  border: 2px solid #808080d7;
 }
 .input:focus {
   box-shadow: 0px 0px 12px 4px var(--header-color);
 }
 .input::placeholder {
-  color: gray;
+  color: #3f3d3d;
 }
 
 .input:focus::placeholder {
@@ -30,6 +31,7 @@
 
 .create-card__tag {
   height: 30px;
+  padding: 0.5rem;
 }
 
 label {
@@ -50,11 +52,6 @@ label {
 
 .submit-button:active,
 .submit-button:hover {
-  background-color: #f3ce69;
+  background-color: var(--ctaButtonActive-color);
   cursor: pointer;
-}
-
-/*To show what page is active*/
-.navmenu_item:nth-of-type(3) {
-  -webkit-filter: grayscale(1) invert(1);
 }
