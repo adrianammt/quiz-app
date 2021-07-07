@@ -1,5 +1,5 @@
-@import "/src/styles/_base.css";
-@import url("/src/styles/_utility.css");
+@import "_base.css";
+@import "_utility.css";
 
 .quiz-card {
   display: flex;
@@ -35,7 +35,8 @@
 
 .show-hide-answer:active,
 .show-hide-answer:hover {
-  background-color: #b4d3d0;
+  background-color: var(--ctaButton-color);
+  cursor: pointer;
 }
 
 .hideanswer {
@@ -46,35 +47,21 @@
   padding: 0.5em;
   display: inline;
   color: var(--header-color);
+  font-size: 0.9rem;
 }
 
-.quiz-card_bookmark-empty {
-  height: 5em;
+.quiz-card__bookmark {
+  height: 2.8em;
   position: absolute;
-  top: -1.1rem;
-  right: -1rem;
+  top: -0.7rem;
+  right: 0.8rem;
 }
 
-.navmenu {
-  display: flex;
-  height: 4em;
-  gap: 0.5em;
-  justify-content: space-evenly;
-  align-content: center;
-}
-.navmenu img {
-  height: 3em;
+.quiz-card__bookmark:hover,
+.quiz-card__bookmark:active {
+  cursor: pointer;
 }
 
-.navmenu_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-style: none;
-  background-color: transparent;
-}
-
-/*To show what page is active*/
-.navmenu_item:nth-of-type(1) {
-  -webkit-filter: grayscale(1) invert(1);
+.quiz-card__bookmark--active path {
+  fill: black;
 }

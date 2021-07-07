@@ -1,61 +1,57 @@
 @import "_base.css";
-@import url("_utility.css");
-
-body {
-  background-color: var(--body-color);
-}
-
-.quiz-body_top {
-  background-color: var(--header-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.quiz-body {
-  display: grid;
-  grid-template-rows: 5em auto 5em;
-  height: 100vh;
-}
-
-.bottom {
-  background-color: var(--footer-color);
-}
-
-.navmenu {
-  display: flex;
-  height: 4em;
-  gap: 0.5em;
-  justify-content: space-evenly;
-  align-content: center;
-}
-.navmenu img {
-  height: 3em;
-}
-
-.navmenu_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-style: none;
-  background-color: transparent;
-}
-
-/*To show what page is active*/
-.navmenu_item:nth-of-type(3) {
-  -webkit-filter: grayscale(1) invert(1);
-}
+@import "_utility.css";
 
 .create-card {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.2rem;
+  padding-top: 1rem;
 }
-
-.submit-question {
-  text-transform: uppercase;
-}
-
 .create-card__input {
   display: flex;
   justify-content: center;
+  height: 110px;
+  padding: 0.5rem;
+}
+
+.input {
+  border-radius: 5px;
+  border: 2px solid #808080d7;
+}
+.input:focus {
+  box-shadow: 0px 0px 12px 4px var(--header-color);
+}
+.input::placeholder {
+  color: #3f3d3d;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.create-card__tag {
+  height: 30px;
+  padding: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+}
+.create-card__button {
+  align-self: center;
+}
+.submit-button {
+  text-transform: uppercase;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--ctaButton-color);
+  margin-top: 1.5em;
+}
+
+.submit-button:active,
+.submit-button:hover {
+  background-color: var(--ctaButtonActive-color);
+  cursor: pointer;
 }

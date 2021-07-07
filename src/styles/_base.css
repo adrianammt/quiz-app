@@ -7,8 +7,14 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
 }
 
 :root {
@@ -16,4 +22,6 @@ html {
   --footer-color: #418b88;
   --body-color: #f5f7f8;
   --card-color: #f3efefce;
+  --ctaButton-color: #eb6464;
+  --ctaButtonActive-color: #ceb47d;
 }

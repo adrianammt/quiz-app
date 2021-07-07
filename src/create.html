@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/create.css" />
   </head>
   <body class="quiz-body">
@@ -11,46 +15,67 @@
       <h1 id="home">Create</h1>
     </header>
     <main class="content">
-      <form class="create-card">
-        <label for="add-question">Question</label>
+      <form class="create-card" autocomplete="off">
+        <label for="addQuestion">Question:</label>
         <textarea
-          class="create-card__input"
-          name="add-question"
-          id="add-question"
+          class="create-card__input input"
+          name="addQuestion"
+          id="addQuestion"
           stype="text"
           maxlength="140"
+          placeholder="Type in your question. Max length of 140 characters."
         ></textarea>
-        <label for="add-answer">Answer</label>
+        <label for="addAnswer">Answer:</label>
         <textarea
-          class="create-card__input"
-          name="add-answer"
-          id="add-answer"
+          class="create-card__input input"
+          name="addAnswer"
+          id="addAnswer"
           stype="text"
           maxlength="140"
+          placeholder="Type in your answer. Max length of 140 characters."
         ></textarea>
-        <label for="add-tags">Tags</label>
-        <input type="text" id="add-tags" />
-        <div class="create-card__input">
-          <button type="submit" class="submit-question">Submit</button>
+        <label for="addTags">Tags:</label>
+        <input
+          class="create-card__tag input"
+          type="text"
+          name="addTags"
+          id="addTags"
+          placeholder="Add up to 4 tags separeted by a coma , ."
+        />
+        <div class="create-card__button">
+          <button type="submit" class="submit-button">Submit</button>
         </div>
       </form>
     </main>
     <footer class="footer">
       <nav class="navmenu">
-        <a class="navmenu_item" href="index.html"
-          ><img src="/images/home.png" />Home</a
+        <a href="/src/index.html" class="navmenu_item"
+          ><img src="/images/AFL-Moratrem-Home.svg" alt="Home icon" />Home</a
         >
-        <a class="navmenu_item" href="bookmark.html"
-          ><img src="/images/bookmark-filled.png" />Bookmark</a
+
+        <a href="bookmark.html" class="navmenu_item"
+          ><img
+            src="/images/AFL-Moratrem-Bookmark_filled.svg"
+            alt="Bookmark icon"
+          />Bookmark</a
         >
-        <a class="navmenu_item" href="create.html"
-          ><img src="/images/create.png" />Create</a
+
+        <a href="" class="navmenu_item active"
+          ><img
+            src="/images/AFL-Moratrem-Plus.svg"
+            alt="Create icon"
+            class="plus-icon"
+          />Create</a
         >
-        <a class="navmenu_item" href="profile.html"
-          ><img src="/images/profile.png" />Profile</a
+
+        <a href="/src/profile.html" class="navmenu_item"
+          ><img
+            src="/images/AFL-Moratrem-User.svg"
+            alt="Profile icon"
+          />Profile</a
         >
       </nav>
     </footer>
-    <script src="/src/index.js"></script>
+    <script src="/src/script.js"></script>
   </body>
 </html>
