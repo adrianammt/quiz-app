@@ -1,14 +1,13 @@
 import { createCardComponent } from "../lib/card.js";
-import { data } from "../lib/db.js";
+import { getQuestionCards } from "../lib/db.js";
 
-//Render cards coming from data
-const cardComponents = [];
-data.forEach((cardData) => {
-  const cardComponent = createCardComponent(cardData);
-  cardComponents.push(cardComponent);
-});
+const mainElement = document.querySelector("main");
 
-const contentElement = document.querySelector(".content");
-cardComponents.forEach((cardComponent) => {
-  contentElement.append(cardComponent);
+//Render cards coming from input
+
+const dataFromLocalStorage = getQuestionCards();
+
+dataFromLocalStorage.forEach((cardData, i) => {
+  const cardComponent = createCardComponent(cardData, i);
+  mainElement.append(cardComponent);
 });
