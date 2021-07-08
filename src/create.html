@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/create.css" />
+    <script type="module" src="/lib/create.js"></script>
   </head>
   <body class="quiz-body">
     <header class="header">
@@ -24,6 +25,7 @@
           stype="text"
           maxlength="140"
           placeholder="Type in your question. Max length of 140 characters."
+          required
         ></textarea>
         <label for="addAnswer">Answer:</label>
         <textarea
@@ -33,6 +35,7 @@
           stype="text"
           maxlength="140"
           placeholder="Type in your answer. Max length of 140 characters."
+          required
         ></textarea>
         <label for="addTags">Tags:</label>
         <input
@@ -41,6 +44,7 @@
           name="addTags"
           id="addTags"
           placeholder="Add up to 4 tags separeted by a coma , ."
+          required
         />
         <div class="create-card__button">
           <button type="submit" class="submit-button">Submit</button>
@@ -76,6 +80,5 @@
         >
       </nav>
     </footer>
-    <script src="/src/script.js"></script>
   </body>
 </html>
