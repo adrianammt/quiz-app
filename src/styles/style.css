@@ -10,18 +10,15 @@
   padding: 0.8em;
   position: relative;
   background-color: var(--card-color);
+  gap: 1rem;
 }
 
-.answer-text {
-  padding-bottom: 1.5em;
+.p-text {
+  text-align: center;
 }
 
 .hide-text {
   display: none;
-}
-
-.show-text {
-  display: block;
 }
 
 .show-hide-answer {
@@ -44,8 +41,6 @@
 }
 
 .card_part-tag {
-  padding: 0.5em;
-  display: inline;
   color: var(--header-color);
   font-size: 0.9rem;
 }
